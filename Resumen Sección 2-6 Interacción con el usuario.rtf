@@ -1,0 +1,54 @@
+La función input() es capaz de leer datos que fueron introducidos por el usuario y pasar esos datos al programa en ejecución.
+El resultado de la función input() es una cadena.
+
+Cambio de typo de dato:
+La función int() toma un argumento (por ejemplo, una cadena: int(string)) e intenta convertirlo a un valor entero; si llegase a fallar, el programa entero fallará también (existe una manera de solucionar esto, se explicará mas adelante);
+La función float() toma un argumento (por ejemplo, una cadena: float(string)) e intenta convertirlo a flotante (el resto es lo mismo).
+
+CONCATENACIÓN
+El signo de + (más), al ser aplicado a dos cadenas, se convierte en un operador de concatenación
+
+REPLICACIÓN
+El signo de * (asterisco), cuando es aplicado a una cadena y a un número (o a un número y cadena) se convierte ñ      en un operador de replicación
+
+CONVERTIR UN int() o float() en una cadena
+Se puede convertir un numero a una cadena, lo cual es más fácil y seguro - esta operación es posible hacerla siempre.
+Una función capaz de hacer esto se llama str()
+
+RESUMEN DE SECCIÓN
+1. La función print() envía datos a la consola, mientras que la función input() obtiene datos de la consola.
+
+2. La función input() viene con un parámetro opcional: la cadena de mensaje. Te permite escribir un mensaje antes de que el usuario ingrese algo, por ejemplo:
+
+name = input("Ingresa tu nombre: ")
+print("Hola, " + name + ". ¡Un gusto conocerte!")
+ 
+
+3. Cuando la función input() es llamada o invocada, el flujo del programa se detiene, el símbolo del cursor se mantiene parpadeando (le está indicando al usuario que tome acción ya que la consola está en modo de entrada) hasta que el usuario haya ingresado un dato y/o haya presionado la tecla Enter.
+
+  NOTA  
+Puedes probar la funcionalidad completa de la función input() localmente en tu máquina. Por razones de optimización, se ha limitado el máximo número de ejecuciones en Edube a solo algunos segundos únicamente. Ve a Sandbox, copia-pega el código que está arriba, ejecuta el programa, y espera unos segundos. Tu programa debe detenerse después de unos segundos. Ahora abre IDLE, y ejecuta el mismo programa ahí -¿Puedes notar alguna diferencia?
+
+Tip: la característica mencionada anteriormente de la función input() puede ser utilizada para pedirle al usuario que termine o finalice el programa. Observa el siguiente código:
+
+name = input("Ingresa tu nombre: ")
+print("Hola, " + name + ". '¡Gusto en conocerte'!")
+ 
+print("\nPresiona Enter para terminar el programa.")
+input()
+print("FIN.")
+ 
+
+4. El resultado de la función input() es una cadena. Se pueden unir cadenas unas con otras a través del operador de concatenación (+). Observa el siguiente código:
+
+num_1 = input("Ingresa el primer número: ") # Ingresa 12
+num_2 = input("Ingresa el segundo número: ") # Ingresa 21
+ 
+print(num_1 + num_2) # El programa retorna 1221
+ 
+
+5. También se pueden multiplicar (* - replicación) cadenas, por ejemplo:
+
+my_input = input("Ingresa algo: ") # Entrada de ejemplo: hola
+print(my_input * 3) # Salida Esperada: holahola
+ 
