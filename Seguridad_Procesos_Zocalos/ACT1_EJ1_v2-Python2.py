@@ -1,3 +1,4 @@
+# Archivo para Python-2, para usarlo en Python-3 se necesita poner paréntesis en los prints
 import os, sys
 
 r, w = os.pipe()
