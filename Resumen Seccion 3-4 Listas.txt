@@ -1,0 +1,28 @@
+Listas
+    Las listas comienzan con un corchete abierto y termina con un corchete cerrado.
+    Los elementos dentro de una lista pueden tener diferentes tipos. Algunos de ellos pueden ser enteros, otros son flotantes y otros pueden ser listas.
+    Los elementos de una lista están siempre numerados desde cero.
+    El valor dentro de los corchetes que selecciona un elemento de la lista se llama un índice, y la operación de seleccionar un elemento de la lista se conoce como indexación.
+La función len()
+    La longitud de una lista puede variar durante la ejecución. Se pueden agregar nuevos elementos a la lista, mientras que otros pueden eliminarse de ella. 
+    Esto significa que la lista es una entidad muy dinámica.
+    Si deseas verificar la longitud actual de la lista, puedes usar una función llamada len() 
+Eliminado elementos de una lista
+    Cualquier elemento de la lista puede ser eliminado en cualquier momento - esto se hace con una instrucción llamada del (eliminar)
+    Tienes que apuntar al elemento que quieres eliminar - desaparecerá de la lista y la longitud de la lista se reducirá en uno.
+Índices negativos
+    Los índices negativos son válidos, un elemento con índice igual a -1 es el último de la lista
+Funciones vs Métodos
+    Un método es un tipo específico de función - se comporta como una función y se parece a una función, pero difiere en la forma en que actúa y en su estilo de invocación.
+    Una función no pertenece a ningún dato - obtiene datos, puede crear nuevos datos y (generalmente) produce un resultado.
+    Un método hace todas estas cosas, pero también puede cambiar el estado de una entidad seleccionada.
+    Un método es propiedad de los datos para los que trabaja, mientras que una función es propiedad de todo el código.
+Agregar elementos a una lista
+    Mediante el método append() insertamos un elemento al final de la lista. list.append(value)
+    Mediante el método insert insertamos un elemento en una posición determinada. list.insert(location, value)
+Como intercambiar elementos de una lista
+    Se puede usar el siguiente método:
+        my_list = [10, 1, 8, 3, 5]
+        my_list[0], my_list[4] = my_list[4], my_list[0]
+        my_list[1], my_list[3] = my_list[3], my_list[1]
+        print(my_list)
