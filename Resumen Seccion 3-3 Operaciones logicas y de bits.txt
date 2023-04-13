@@ -1,0 +1,17 @@
+Operador AND
+    Es un operador binario con una prioridad inferior a la expresada por los operadores de comparación. 
+    se basa en la tabla de la verdad de la puerta lógica AND
+
+Operador OR
+    Es un operador binario con una prioridad más baja que and
+    Se basa en la tabla de la verda de la puerta logica OR
+
+Operador NOT
+    Es un operador unario que realiza una negación lógica, y su prioridad es muy alta: igual que el unario + y -
+
+Desplazamiento binario a la izquierda y desplazamiento binario a la derecha
+    Python ofrece otra operación relacionada con los bits individuales: shifting. 
+    Esto se aplica solo a los valores de número entero, y no debe usar flotantes como argumentos para ello.
+    La computadora realiza el mismo tipo de operación, pero con una diferencia: como dos es la base para los números binarios (no 10), 
+    desplazar un valor un bit a la izquierda corresponde a multiplicarlo por dos; respectivamente, desplazar un bit a la derecha es como dividir entre dos.
+    Los operadores de cambio en Python son un par de dígrafos: < < y > >, sugiriendo claramente en qué dirección actuará el cambio.

@@ -11,3 +11,15 @@ La palabra reservada for abre el bucle for; nota - No hay condición después de
 Cualquier variable después de la palabra reservada for es la variable de control del bucle; cuenta los giros del bucle y lo hace automáticamente.
 La palabra reservada in introduce un elemento de sintaxis que describe el rango de valores posibles que se asignan a la variable de control.
 La función range() (esta es una función muy especial) es responsable de generar todos los valores deseados de la variable de control; en nuestro ejempl
+
+Bucle For con tres argumentos en range(x, y, z)
+El primer argumento pasado a la función range() nos dice cual es el número de inicio de la secuencia (por lo tanto 2 en la output). 
+El segundo argumento le dice a la función dónde detener la secuencia (la función genera números hasta el número indicado por el segundo argumento, pero no lo incluye). 
+El tercer argumento indica el paso, que en realidad significa la diferencia entre cada número en la secuencia de números generados por la función.
+
+Sentencias BREAK y CONTINUE 
+break - sale del bucle inmediatamente, e incondicionalmente termina la operación del bucle; el programa comienza a ejecutar la instrucción más cercana después del cuerpo del bucle.
+continue - se comporta como si el programa hubiera llegado repentinamente al final del cuerpo; el siguiente turno se inicia y la expresión de condición se prueba de inmediato.
+
+Los bucles while y for también pueden tener una cláusula else en Python. 
+La cláusula else se ejecuta después de que el bucle finalice su ejecución siempre y cuando no haya terminado con break,
