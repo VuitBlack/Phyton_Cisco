@@ -7,7 +7,7 @@ processid = os.fork()           #Bifurca el proceso hijo, retorna un 0 en el hij
 if processid:
     os.close(w)                 #cierra el descriptor del archivo (w)
     r = os.fdopen(r)            #retorna un objeto abierto conectado al descriptor del archivo(r)
-    print ("Padre leyendo")    #imprime "Padre leyendo"  
+    print ("Padre leyendo")     #imprime "Padre leyendo"  
     str = r.read()              #Lee el contenido del archivo (r) y lo devuelve a la cadena str
     print ("texto:", str)       #Imprime "texto:"
     sys.exit(0)                 #sys.exit(0) es terminación exitosa del programa
