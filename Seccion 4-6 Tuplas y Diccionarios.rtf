@@ -1,0 +1,49 @@
+TIPOS DE SECUENCIAS Y MUTABILIDAD
+    Tipo de secuencia es un tipo de dato en Python el cual es capaz de almacenar más de un valor,
+    (o ninguno si la secuencia esta vacía), los cuales pueden ser secuencialmente (de ahí el nombre) examinados, elemento por elemento.
+    Una secuencia es un tipo de dato que puede ser escaneado por el bucle for.
+
+    La mutabilidad - es una propiedad de cualquier tipo de dato en Python que describe su disponibilidad para poder cambiar libremente durante la ejecución
+    de un programa. Existen dos tipos de datos en Python: mutables e inmutables.
+    Los datos mutables pueden ser actualizados libremente en cualquier momento o "in situ"
+
+    Una TUPLA es una secuencia INMUTABLE. Se puede comportar como una lista pero no puede ser modificada en el momento.
+TUPLAS
+    La sintaxis de las tuplas es igual que la de las listas pero cambiamos los corchetes por () paréntesis.
+    Aunque también es posible crear las tuplas solo separadando los valores por comas omitiendo los ().
+        ejemplo:
+            tuple_1 = (1, 2, 4, 8)
+            tuple_2 = 1., .5, .25, .125
+    Cada elemento de una tupla puede ser de distinto tipo ejemplo (punto flotante, entero, cadena, o cualquier otro tipo de dato)
+OPERACIONES CON TUPLAS
+    La función len() acepta tuplas, y regresa el número de elementos contenidos dentro;
+    El operador + puede unir tuplas (ya se ha mostrado esto antes)
+    El operador * puede multiplicar las tuplas, así como las listas;
+    Los operadores in y not in funcionan de la misma manera que en las listas.
+DICCIONARIOS
+    El diccionario es otro tipo de estructura de datos de Python. 
+    No es una secuencia (pero puede adaptarse fácilmente a un procesamiento secuencial) y además es mutable.
+    COMO DEFINIR UN DICCIONARIO 
+        La lista de todos los pares es encerrada con llaves, mientras que los pares son separados por comas, y las claves y valores por dos puntos.
+    COMO FUNCIONA UN DICCIONARIO
+        Un diccionario en Python funciona de la misma manera que un diccionario bilingüe. Por ejemplo, se tiene la palabra en español "gato" 
+        y se necesita su equivalente en francés. Lo que se haría es buscar en el diccionario para encontrar la palabra "gato". 
+        Eventualmente la encontrarás, y sabrás que la palabra equivalente en francés es "chat".
+        A palabra que se esta buscando se denomina key. La palabra que se obtiene del diccionario es denominada value.
+            - cada key debe de ser única - no es posible tener una key duplicada;
+            - una key puede ser un de dato de cualquier tipo - puede ser un número (entero o flotante), incluso una cadena, pero no una lista;
+            - un diccionario no es una lista - una lista contiene un conjunto de valores numerados, mientras que un diccionario almacena pares de valores;
+            - la función len() aplica también para los diccionarios - regresa la cantidad de pares (key-value) en el diccionario;
+            - un diccionario es una herramienta de un solo sentido - si fuese un diccionario español-francés, 
+              podríamos buscar en español para encontrar su contraparte en francés más no viceversa.
+    METODOS Y FUNCIONES DE LOS DICCIONARIOS
+        Se puede usar un bucle for para recorrer un diccionario por medio de un enlace intermedio, si no no se puede recorrer puesto que no es de tipo secuencial.
+        Se puede acceder a un elemento haciendo referencia a su key colocandola entre corchetes o con el método get()
+        Se pueden, agregar, modificar con el método update() y elminar mediante del.
+        Se pueden ordenar mediante la funcion sorted(), solo hay que añadir un bucle for
+            ejemplo:
+                for key in sorted(dictionary.keys()):
+        Se pueden agregar nuevas key con su valor a un diccionario es tan simple como cambiar un valor. Solo se tiene que asignar un valor a una nueva clave que no haya existido antes.
+        Se pueden eliminar claves con la instrucción del, para eliminar el último elemento de la lista se usa la instrucción popitem().
+
+
