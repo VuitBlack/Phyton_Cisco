@@ -1,0 +1,53 @@
+BLOQUE TRY-EXCEPT
+1.- comienza con la palabra clave reservada try este es el lugar donde se coloca el código que se sospecha que tiene riesgo
+ y puede terminar en caso de un error; nota: este tipo de error lleva por nombre excepción, mientras que la ocurrencia de la 
+ excepción se le denomina generar - podemos decir que se genera (o se generó) una excepción;
+2.- la parte del código que comienza con la palabra clave reservada except esta parte fue diseñada para manejar la excepción; 
+ depende de ti lo que quieras hacer aquí: puedes limpiar el desorden o simplemente puede barrer el problema debajo de la alfombra
+  (aunque se prefiere la primera solución).
+
+
+el except por defecto debe ser el último except! ¡Siempre!
+
+ALGUNAS EXCEPT ÚTILES
+ZeroDivisionError
+    Esta aparece cuando intentas forzar a Python a realizar cualquier operación que provoque una división en la que el divisor es cero 
+    o no se puede distinguir de cero. Toma en cuenta que hay más de un operador de Python que puede hacer que se genere esta excepción. 
+    Los operadores son estos: /, //, y %.
+
+ValueError
+Espera esta excepción cuando estás manejando valores que pueden usarse de manera inapropiada en algún contexto. 
+En general, esta excepción se genera cuando una función (como int() o float()) recibe un argumento de un tipo adecuado, pero su valor es inaceptable.
+
+TypeError
+Esta excepción aparece cuando intentas aplicar un dato cuyo tipo no se puede aceptar en el contexto actual.
+
+AttributeError
+Esta excepción llega - entre otras ocasiones - cuando intentas activar un método que no existe en un elemento con el que se está tratando.
+
+SyntaxError
+Esta excepción se genera cuando el control llega a una línea de código que viola la gramática de Python.
+
+BUG vs DEBUG
+La herramienta de depuración se llama un depurador, mientras que el proceso durante el cual se eliminan los errores del código se llama depuración.
+
+PRINT DEBUGGING
+se denomina depuración interactiva. El significado del término se explica por sí mismo 
+el proceso necesita su interacción (la del desarrollador) para que se lleve a cabo.
+Se trata de crear pint() donde pienses que el código puede fallar.
+
+PASOS EN LA BUSQUEDA DE ERRORES 
+    1.- Busca ayuda en algún compañero, explicale como funciona tu código y no omitas detalles. mira este enlace https://en.wikipedia.org/wiki/Rubber_duck_debugging
+    2.- Intenta aislar el problema. Extrae la parte del código que puede tener el error y ejecutala por separado.
+    3.- Si el error es reciente mira los últimos cambios introducidos seguro que esta ahí el problema.
+    4.- Tomate un descanso.
+    5.- Se optimista eventualmente encontraras el error.
+
+PRUEBAS UNITARIAS
+El nombre puede ser un poco confuso, ya que no se trata solo de probar el software, sino también (y, sobre todo) de cómo se escribe el código.
+las pruebas unitarias asumen que las pruebas son partes inseparables del código y la preparación de los datos de prueba es una parte inseparable de la 
+codificación. Esto significa que cuando escribes una función o un conjunto de funciones cooperativas, también estás obligado a crear un 
+conjunto de datos para los cuales el comportamiento de tu código es predecible y conocido.
+Python proporciona un módulo dedicado llamado unittest. 
+
+
