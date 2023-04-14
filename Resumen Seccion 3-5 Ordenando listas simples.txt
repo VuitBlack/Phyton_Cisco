@@ -1,0 +1,6 @@
+Para ordenar una lista en Python lo mejor es usar el método short() de las listas
+ejemplo:
+    my_list.short()
+Para ondenar en sentido inverso una lista se utiliza el método reverse()
+ejemplo:
+    my_list.reverse()
