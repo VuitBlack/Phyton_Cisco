@@ -1,0 +1,22 @@
+LISTAS DENTRO DE LISTAS
+    Son las denominadas matrices
+    Para encontrar cualquier elemento de una lista bidimensional, debes usar dos coordenadas:
+        Una vertical (número de fila).
+        Una horizontal (número de columna).
+
+
+La comprensión de listas te permite crear nuevas listas a partir de las existentes de una manera concisa y elegante. 
+La sintaxis de una comprensión de lista es la siguiente:
+
+        [expresión para el elemento en la lista si es condicional]
+ 
+El cual es un equivalente del siguiente código:
+
+        for element in list:
+            if conditional:
+                expression
+
+Puedes usar listas anidadas en Python para crear matrices (es decir, listas bidimensionales)
+Puedes anidar tantas listas en las listas como desee y, por lo tanto, crear listas n-dimensionales, 
+    por ejemplo:
+        arreglos de tres, cuatro o incluso sesenta y cuatro dimensiones.
